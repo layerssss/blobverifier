@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Blob Verifier</title>
+    <script src="script.js" defer></script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  </head>
+  <body>
+    <form id="generate_blob_form">
+      <header>
+        <h1>Step 1: Generate Blob</h1>
+      </header>
+      <label for="size_mb">Blob Size:</label>
+      <input
+        id="size_mb"
+        name="size_mb"
+        type="number"
+        placeholder="Size in MB"
+        required
+        value="1000"
+      />
+      <button type="submit">Generate Blob</button>
+    </form>
+    <div id="generate_blob_output"></div>
+    <form id="verify_blob_form" style="opacity: 0.1">
+      <header>
+        <h1>Step 2: Verify Blob</h1>
+      </header>
+      <label for="blob_input">Paste Blob Data:</label>
+      <input type="file" id="blob_input" name="blob_input" required />
+      <button type="submit">Verify Blob</button>
+    </form>
+    <div id="verify_blob_output"></div>
+  </body>
+</html>
